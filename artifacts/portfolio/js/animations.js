@@ -92,12 +92,14 @@ export function animateHero() {
   const tl = gsap.timeline({ delay: 0.2 });
 
   // Badge
-  tl.to(".hero-badge", {
+  tl.fromTo(".hero-badge", {
+    opacity: 0,
+    y: 20,
+  }, {
     opacity: 1,
     y: 0,
     duration: 0.8,
     ease: "power3.out",
-    from: { y: 20 },
   }, 0);
 
   // Name — stagger each line
@@ -116,7 +118,10 @@ export function animateHero() {
   // Titles, headline, sub, CTAs — staggered
   const elements = [".hero-titles", ".hero-headline", ".hero-sub", ".hero-ctas", ".hero-scroll"];
   elements.forEach((selector, i) => {
-    tl.to(selector, {
+    tl.fromTo(selector, {
+      opacity: 0,
+      y: 20,
+    }, {
       opacity: 1,
       y: 0,
       duration: 0.75,
@@ -216,17 +221,15 @@ export function initCounters() {
       start: "top 85%",
       once: true,
       onEnter: () => {
-        gsap.fromTo(
-          { val: 0 },
-          { val: target },
-          {
-            duration: 1.8,
-            ease: "power2.out",
-            onUpdate: function () {
-              el.textContent = Math.round(this.targets()[0].val).toLocaleString();
-            },
-          }
-        );
+        const obj = { val: 0 };
+        gsap.to(obj, {
+          val: target,
+          duration: 1.8,
+          ease: "power2.out",
+          onUpdate: () => {
+            el.textContent = Math.round(obj.val).toLocaleString();
+          },
+        });
       },
     });
   });

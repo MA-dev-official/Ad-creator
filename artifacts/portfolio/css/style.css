@@ -804,6 +804,46 @@ button {
   transition: border-color var(--dur-med), transform var(--dur-med) var(--ease-luxury), box-shadow var(--dur-med);
 }
 
+/* ── cinematic background image layer ── */
+.service-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  transition: transform 0.7s var(--ease-luxury), opacity var(--dur-med);
+  opacity: 1;
+}
+
+/* dark gradient overlay on top of the image */
+.service-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(5,5,5,0.82) 0%,
+    rgba(5,5,5,0.88) 60%,
+    rgba(5,5,5,0.94) 100%
+  );
+  transition: background var(--dur-med);
+}
+
+/* on hover: slight image scale + lighter overlay = subtle reveal */
+.service-card:hover .service-bg {
+  transform: scale(1.06);
+}
+
+.service-card:hover .service-bg::after {
+  background: linear-gradient(
+    160deg,
+    rgba(5,5,5,0.65) 0%,
+    rgba(5,5,5,0.75) 60%,
+    rgba(5,5,5,0.88) 100%
+  );
+}
+
+/* gold glow on hover — sits above the bg image, below the text */
 .service-card::before {
   content: '';
   position: absolute;
@@ -811,6 +851,18 @@ button {
   background: linear-gradient(135deg, var(--gold-glow) 0%, transparent 60%);
   opacity: 0;
   transition: opacity var(--dur-med);
+  z-index: 1;
+}
+
+/* all card content must sit above both layers */
+.service-num,
+.service-icon,
+.service-title,
+.service-desc,
+.service-for,
+.service-badge {
+  position: relative;
+  z-index: 2;
 }
 
 .service-card:hover {
