@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO: Primary Meta Tags ===== -->
+  <title>Muhammad Ahmad — AI Ads Creator | Cinematic AI Advertisements</title>
+  <meta name="description" content="Muhammad Ahmad is a professional AI Ads Creator based in Lahore, Pakistan. Specializing in AI-generated product commercials, luxury perfume advertisements, social media ad creatives, and cinematic marketing videos." />
+  <meta name="keywords" content="AI ads creator, AI video generation, luxury perfume advertisement, product commercial, AI marketing video, prompt engineer, Lahore Pakistan" />
+  <meta name="author" content="Muhammad Ahmad" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- ===== SEO: Open Graph / Facebook ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://muhammadahmad.ai/" />
+  <meta property="og:title" content="Muhammad Ahmad — AI Ads Creator | Cinematic AI Advertisements" />
+  <meta property="og:description" content="Premium AI-generated product commercials, luxury perfume advertisements, and cinematic marketing videos." />
+
+  <!-- ===== SEO: Twitter Card ===== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://muhammadahmad.ai/" />
+  <meta name="twitter:title" content="Muhammad Ahmad — AI Ads Creator" />
+  <meta name="twitter:description" content="Cinematic AI-powered advertisements. Product commercials, luxury perfume ads & marketing videos." />
+
+  <!-- ===== Structured Data ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muhammad Ahmad",
+    "jobTitle": "AI Ads Creator",
+    "description": "AI Video Generation Specialist and Luxury Commercial Creator",
+    "address": { "@type": "PostalAddress", "addressLocality": "Lahore", "addressCountry": "Pakistan" }
+  }
+  </script>
+
+  <!-- ===== Google Fonts ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+
+  <!-- ===== Stylesheet ===== -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ===== PRELOADER ===== -->
+  <div id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="preloader-bar"><div class="preloader-progress" id="preloaderProgress"></div></div>
+      <span class="preloader-text">MUHAMMAD AHMAD</span>
+    </div>
+  </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="nav-header" role="banner">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo" aria-label="Muhammad Ahmad — Home">
+        <span class="logo-name">M<span class="logo-accent">.</span>Ahmad</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#process" class="nav-link">Process</a></li>
+        <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+
+    <!-- SECTION 1 — HERO -->
+    <section id="hero" class="section-hero" aria-label="Hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-orb hero-orb--1"></div>
+        <div class="hero-orb hero-orb--2"></div>
+        <div class="hero-orb hero-orb--3"></div>
+        <canvas id="heroCanvas"></canvas>
+      </div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge" data-gsap="fadeUp">
+            <span class="badge-dot"></span>
+            <span>Available · Lahore, Pakistan</span>
+          </div>
+
+          <h1 class="hero-name" data-gsap="fadeUp">
+            <span class="hero-name-first">Muhammad</span>
+            <span class="hero-name-last">Ahmad</span>
+          </h1>
+
+          <div class="hero-titles" data-gsap="fadeUp">
+            <div class="titles-track" id="titlesTrack" aria-live="polite">
+              <span class="title-item active">AI Ads Creator</span>
+              <span class="title-item">AI Video Generation Specialist</span>
+              <span class="title-item">Luxury Commercial Creator</span>
+              <span class="title-item">Prompt Engineer</span>
+              <span class="title-item">Product Ad Creator</span>
+            </div>
+          </div>
+
+          <h2 class="hero-headline" data-gsap="fadeUp">
+            Cinematic AI Advertisements<br />
+            <em>Designed to Make Products Stand Out</em>
+          </h2>
+
+          <p class="hero-sub" data-gsap="fadeUp">
+            I create AI-powered product commercials, luxury perfume advertisements,
+            social media ad creatives, and cinematic marketing videos using advanced AI workflows.
+          </p>
+
+          <div class="hero-ctas" data-gsap="fadeUp">
+            <a href="#projects" class="btn btn--primary">
+              <span>View Projects</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#contact" class="btn btn--outline">
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <div class="hero-scroll" data-gsap="fadeUp" aria-hidden="true">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 — ABOUT -->
+    <section id="about" class="section section-about" aria-label="About">
+      <div class="container">
+        <div class="section-header" data-gsap="fadeUp">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">The Creator Behind<br /><em>The Lens of AI</em></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-visual" data-gsap="fadeLeft">
+            <div class="profile-frame">
+              <div class="profile-circle">
+                <div class="profile-initials">MA</div>
+                <!-- To use your photo: replace the div above with:
+                     <img src="assets/profile/photo.jpg" alt="Muhammad Ahmad" loading="lazy" /> -->
+              </div>
+              <div class="profile-ring r1"></div>
+              <div class="profile-ring r2"></div>
+            </div>
+            <div class="about-tags">
+              <span class="tag">AI Video Generation</span>
+              <span class="tag">Prompt Engineering</span>
+              <span class="tag">Commercial Direction</span>
+              <span class="tag">Luxury Advertising</span>
+            </div>
+          </div>
+
+          <div class="about-content" data-gsap="fadeRight">
+            <p class="about-intro">
+              I specialize in creating <strong>premium AI-generated commercial advertisements</strong>
+              for products and brands. My workflow combines AI image generation, AI video generation,
+              advanced prompting, creative direction, and editing to produce marketing content
+              that captures attention and strengthens brand presentation.
+            </p>
+            <p class="about-body">
+              Based in Lahore, Pakistan, I work with brands globally to craft cinematic AI commercials
+              that feel indistinguishable from high-budget productions. From luxury perfume campaigns
+              to social media ad creatives, every piece is engineered to convert viewers into customers.
+            </p>
+
+            <div class="stats-grid" role="list">
+              <div class="stat-card" role="listitem">
+                <div class="stat-top">
+                  <span class="stat-num" data-count="120">0</span>
+                  <span class="stat-plus">+</span>
+                </div>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <div class="stat-card" role="listitem">
+                <div class="stat-top">
+                  <span class="stat-num" data-count="85">0</span>
+                  <span class="stat-plus">+</span>
+                </div>
+                <span class="stat-label">Commercial Videos</span>
+              </div>
+              <div class="stat-card" role="listitem">
+                <div class="stat-top">
+                  <span class="stat-num" data-count="40">0</span>
+                  <span class="stat-plus">+</span>
+                </div>
+                <span class="stat-label">Ad Concepts</span>
+              </div>
+              <div class="stat-card" role="listitem">
+                <div class="stat-top">
+                  <span class="stat-num" data-count="2000">0</span>
+                  <span class="stat-plus">+</span>
+                </div>
+                <span class="stat-label">Hours of Learning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 — SERVICES -->
+    <section id="services" class="section section-services" aria-label="Services">
+      <div class="container">
+        <div class="section-header" data-gsap="fadeUp">
+          <span class="section-label">What I Create</span>
+          <h2 class="section-title">Specialized AI<br /><em>Commercial Services</em></h2>
+        </div>
+
+        <!--
+          HOW TO MODIFY SERVICES:
+          Edit the title, description, and audience text inside each .service-card.
+          To add a new service: copy a full .service-card block and paste it inside .services-grid.
+        -->
+        <div class="services-grid">
+
+          <article class="service-card" data-gsap="fadeUp">
+            <div class="service-num">01</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="7" width="22" height="14" rx="2" stroke="#d4af37" stroke-width="1.4"/><circle cx="14" cy="14" r="4" stroke="#d4af37" stroke-width="1.4"/></svg>
+            </div>
+            <h3 class="service-title">AI Product Commercials</h3>
+            <p class="service-desc">High-quality AI-generated advertisements showcasing products in a cinematic and engaging way that drives attention and desire.</p>
+            <span class="service-for">For: e-commerce brands &amp; product launches</span>
+          </article>
+
+          <article class="service-card service-card--gold" data-gsap="fadeUp">
+            <div class="service-num">02</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 3C14 3 7 7 7 14C7 17.9 10.1 21 14 21C17.9 21 21 17.9 21 14C21 7 14 3 14 3Z" stroke="#d4af37" stroke-width="1.4"/><path d="M10 14c0 0 1 3.5 4 3.5s4-3.5 4-3.5" stroke="#d4af37" stroke-width="1.4" stroke-linecap="round"/><path d="M14 21v4" stroke="#d4af37" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="service-title">Luxury Perfume Advertisements</h3>
+            <p class="service-desc">Premium perfume commercials with opulent visuals and high-end storytelling that evokes emotion and elevates fragrance brands.</p>
+            <span class="service-for">For: fragrance brands &amp; luxury houses</span>
+            <span class="service-badge">Featured</span>
+          </article>
+
+          <article class="service-card" data-gsap="fadeUp">
+            <div class="service-num">03</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="5" width="14" height="18" rx="2" stroke="#d4af37" stroke-width="1.4"/><rect x="11" y="3" width="14" height="18" rx="2" stroke="#d4af37" stroke-width="1.4"/><path d="M16 12l4 2-4 2v-4z" fill="#d4af37"/></svg>
+            </div>
+            <h3 class="service-title">Social Media Video Ads</h3>
+            <p class="service-desc">Short-form advertising content optimized for modern social platforms — engineered for scroll-stopping impact and maximum reach.</p>
+            <span class="service-for">For: Instagram, TikTok &amp; YouTube Shorts</span>
+          </article>
+
+          <article class="service-card" data-gsap="fadeUp">
+            <div class="service-num">04</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M5 23V14M11 23V8M17 23V12M23 23V4" stroke="#d4af37" stroke-width="1.4" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="service-title">Brand Promotion Videos</h3>
+            <p class="service-desc">Commercial videos designed to strengthen brand identity and awareness, positioning companies as premium players in their market.</p>
+            <span class="service-for">For: growing brands &amp; agencies</span>
+          </article>
+
+          <article class="service-card" data-gsap="fadeUp">
+            <div class="service-num">05</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="7" width="9" height="9" rx="1" stroke="#d4af37" stroke-width="1.4"/><rect x="16" y="7" width="9" height="9" rx="1" stroke="#d4af37" stroke-width="1.4"/><rect x="3" y="19" width="9" height="4" rx="1" stroke="#d4af37" stroke-width="1.4"/><rect x="16" y="19" width="9" height="4" rx="1" stroke="#d4af37" stroke-width="1.4"/></svg>
+            </div>
+            <h3 class="service-title">E-Commerce Product Ads</h3>
+            <p class="service-desc">Marketing-focused product videos for online stores — converting browsers into buyers through cinematic product storytelling.</p>
+            <span class="service-for">For: Shopify stores &amp; online retailers</span>
+          </article>
+
+          <article class="service-card" data-gsap="fadeUp">
+            <div class="service-num">06</div>
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 3L25 9V19L14 25L3 19V9L14 3Z" stroke="#d4af37" stroke-width="1.4"/><path d="M14 3v22M3 9l11 6 11-6" stroke="#d4af37" stroke-width="1.4"/></svg>
+            </div>
+            <h3 class="service-title">AI Marketing Campaign Videos</h3>
+            <p class="service-desc">Creative visual campaigns generated using advanced AI workflows — full campaign content at a fraction of traditional production costs.</p>
+            <span class="service-for">For: marketing agencies &amp; startups</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4 — SKILLS -->
+    <section id="skills" class="section section-skills" aria-label="Skills">
+      <div class="container">
+        <div class="section-header" data-gsap="fadeUp">
+          <span class="section-label">Expertise</span>
+          <h2 class="section-title">Core Skills &amp;<br /><em>Capabilities</em></h2>
+        </div>
+
+        <!--
+          HOW TO MODIFY SKILLS:
+          Edit or add/remove <span class="skill-pill"> tags below.
+          Gold pills use class "skill-pill skill-pill--gold".
+        -->
+        <div class="skills-cloud" role="list">
+          <span class="skill-pill skill-pill--gold" data-gsap="fadeUp" role="listitem">AI Image Generation</span>
+          <span class="skill-pill" data-gsap="fadeUp" role="listitem">AI Video Generation</span>
+          <span class="skill-pill skill-pill--gold" data-gsap="fadeUp" role="listitem">Prompt Engineering</span>
+          <span class="skill-pill" data-gsap="fadeUp" role="listitem">Image-to-Video Workflows</span>
+          <span class="skill-pill" data-gsap="fadeUp" role="listitem">Commercial Direction</span>
+          <span class="skill-pill skill-pill--gold" data-gsap="fadeUp" role="listitem">Luxury Product Commercials</span>
+          <span class="skill-pill" data-gsap="fadeUp" role="listitem">Perfume Ad Creation</span>
+          <span class="skill-pill" data-gsap="fadeUp" role="listitem">Storyboarding</span>
+          <span class="skill-pill" data-gsap="fadeUp" role="listitem">Creative Direction</span>
+          <span class="skill-pill skill-pill--gold" data-gsap="fadeUp" role="listitem">Video Editing</span>
+          <span class="skill-pill" data-gsap="fadeUp" role="listitem">Motion Design</span>
+          <span class="skill-pill" data-gsap="fadeUp" role="listitem">Marketing Visuals</span>
+          <span class="skill-pill" data-gsap="fadeUp" role="listitem">Social Media Advertising</span>
+          <span class="skill-pill" data-gsap="fadeUp" role="listitem">Visual Storytelling</span>
+          <span class="skill-pill" data-gsap="fadeUp" role="listitem">Product Animation</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5 — FEATURED PROJECTS (MOST IMPORTANT SECTION) -->
+    <section id="projects" class="section section-projects" aria-label="Featured projects">
+      <div class="container">
+        <div class="section-header" data-gsap="fadeUp">
+          <span class="section-label">Portfolio</span>
+          <h2 class="section-title">Featured AI<br /><em>Advertisement Work</em></h2>
+          <p class="section-sub">Every piece below is a fully AI-generated commercial — no stock footage, no traditional filming.</p>
+        </div>
+
+        <!--
+          HOW TO ADD A NEW FILTER CATEGORY:
+          1. Add a button here: <button class="filter-btn" data-filter="Your Category">Your Category</button>
+          2. Use the same string in the "category" field in js/projects.js
+        -->
+        <div class="filter-bar" data-gsap="fadeUp" role="tablist" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="All Projects" role="tab" aria-selected="true">All Projects</button>
+          <button class="filter-btn" data-filter="Perfume Ads" role="tab" aria-selected="false">Perfume Ads</button>
+          <button class="filter-btn" data-filter="Product Commercials" role="tab" aria-selected="false">Product Commercials</button>
+          <button class="filter-btn" data-filter="Social Media Ads" role="tab" aria-selected="false">Social Media Ads</button>
+          <button class="filter-btn" data-filter="Brand Promotions" role="tab" aria-selected="false">Brand Promotions</button>
+          <button class="filter-btn" data-filter="AI Marketing Videos" role="tab" aria-selected="false">AI Marketing Videos</button>
+        </div>
+
+        <!-- Projects injected by JavaScript from js/projects.js -->
+        <div class="projects-grid" id="projectsGrid" role="region" aria-live="polite" aria-label="Projects"></div>
+        <div class="projects-empty" id="projectsEmpty" aria-live="polite" style="display:none;">
+          <p>No projects in this category yet.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO MODAL -->
+    <div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Video player" style="display:none;">
+      <div class="modal-backdrop" id="modalBackdrop"></div>
+      <div class="modal-box">
+        <button class="modal-close" id="modalClose" aria-label="Close video">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 3l12 12M15 3L3 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <div class="modal-video-wrap">
+          <video class="modal-video" id="modalVideo" controls playsinline preload="none">
+            Your browser does not support video.
+          </video>
+        </div>
+        <div class="modal-info">
+          <span class="modal-cat" id="modalCat"></span>
+          <h3 class="modal-title" id="modalTitle"></h3>
+          <p class="modal-desc" id="modalDesc"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 6 — CREATIVE PROCESS -->
+    <section id="process" class="section section-process" aria-label="Creative process">
+      <div class="container">
+        <div class="section-header" data-gsap="fadeUp">
+          <span class="section-label">Workflow</span>
+          <h2 class="section-title">The Creation<br /><em>Process</em></h2>
+        </div>
+
+        <!--
+          HOW TO MODIFY PROCESS STEPS:
+          Edit the step number, title, and description in each .timeline-step below.
+        -->
+        <div class="timeline">
+          <div class="timeline-step" data-gsap="fadeLeft">
+            <div class="step-marker">
+              <span class="step-num">01</span>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-body">
+              <h3 class="step-title">Research &amp; Concept Development</h3>
+              <p class="step-desc">Deep-diving into the brand, product, and target audience to craft a compelling creative concept aligned with campaign goals.</p>
+            </div>
+          </div>
+
+          <div class="timeline-step" data-gsap="fadeLeft">
+            <div class="step-marker">
+              <span class="step-num">02</span>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-body">
+              <h3 class="step-title">Prompt Engineering</h3>
+              <p class="step-desc">Crafting precision prompts — the language that instructs AI to generate exactly the visual storytelling the commercial demands.</p>
+            </div>
+          </div>
+
+          <div class="timeline-step" data-gsap="fadeLeft">
+            <div class="step-marker">
+              <span class="step-num">03</span>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-body">
+              <h3 class="step-title">AI Image Generation</h3>
+              <p class="step-desc">Generating cinematic, high-fidelity product imagery using state-of-the-art AI image models trained for commercial aesthetics.</p>
+            </div>
+          </div>
+
+          <div class="timeline-step" data-gsap="fadeLeft">
+            <div class="step-marker">
+              <span class="step-num">04</span>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-body">
+              <h3 class="step-title">AI Video Generation</h3>
+              <p class="step-desc">Transforming images into fluid, cinematic video sequences — product animations, atmospheric camera movements, and dynamic transitions.</p>
+            </div>
+          </div>
+
+          <div class="timeline-step" data-gsap="fadeLeft">
+            <div class="step-marker">
+              <span class="step-num">05</span>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-body">
+              <h3 class="step-title">Editing &amp; Motion Design</h3>
+              <p class="step-desc">Professional editing, color grading, sound design, and motion graphics — the final layer that elevates AI content into broadcast-ready commercials.</p>
+            </div>
+          </div>
+
+          <div class="timeline-step" data-gsap="fadeLeft">
+            <div class="step-marker">
+              <span class="step-num">06</span>
+            </div>
+            <div class="step-body">
+              <h3 class="step-title">Commercial Delivery</h3>
+              <p class="step-desc">Delivering production-ready files optimized for your platform — social media formats, broadcast specs, or web-ready exports.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7 — TESTIMONIALS -->
+    <section id="testimonials" class="section section-testimonials" aria-label="Client testimonials">
+      <div class="container">
+        <div class="section-header" data-gsap="fadeUp">
+          <span class="section-label">Testimonials</span>
+          <h2 class="section-title">What Clients<br /><em>Are Saying</em></h2>
+        </div>
+
+        <div class="testimonials-wrap" data-gsap="fadeUp">
+          <!-- Slides injected by js/testimonials.js -->
+          <div class="testimonials-slider" id="testimonialsSlider" role="region" aria-label="Testimonials"></div>
+
+          <div class="testimonials-controls" aria-label="Slider navigation">
+            <button class="t-btn" id="tPrev" aria-label="Previous testimonial">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M11 3L5 9l6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="t-dots" id="tDots" role="tablist" aria-label="Testimonial navigation dots"></div>
+            <button class="t-btn" id="tNext" aria-label="Next testimonial">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M7 3l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8 — CONTACT -->
+    <section id="contact" class="section section-contact" aria-label="Contact Muhammad Ahmad">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info" data-gsap="fadeLeft">
+            <span class="section-label">Get In Touch</span>
+            <h2 class="contact-headline">
+              Let's Create AI Advertisements<br />
+              <em>That Capture Attention<br />And Drive Results</em>
+            </h2>
+            <div class="contact-card">
+              <div class="contact-name">Muhammad Ahmad</div>
+              <div class="contact-roles">
+                <span>AI Ads Creator</span>
+                <span class="dot">·</span>
+                <span>AI Video Specialist</span>
+              </div>
+              <div class="contact-loc">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 1C4.8 1 3 2.8 3 5C3 8 7 13 7 13C7 13 11 8 11 5C11 2.8 9.2 1 7 1ZM7 6.5C6.2 6.5 5.5 5.8 5.5 5C5.5 4.2 6.2 3.5 7 3.5C7.8 3.5 8.5 4.2 8.5 5C8.5 5.8 7.8 6.5 7 6.5Z" fill="#d4af37"/></svg>
+                Lahore, Pakistan
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" data-gsap="fadeRight" novalidate aria-label="Contact form">
+            <div class="form-row">
+              <label for="cName" class="form-lbl">Your Name</label>
+              <input type="text" id="cName" name="name" class="form-inp" placeholder="Enter your name" required autocomplete="name" aria-required="true" />
+            </div>
+            <div class="form-row">
+              <label for="cEmail" class="form-lbl">Email Address</label>
+              <input type="email" id="cEmail" name="email" class="form-inp" placeholder="Enter your email" required autocomplete="email" aria-required="true" />
+            </div>
+            <div class="form-row">
+              <label for="cMsg" class="form-lbl">Your Message</label>
+              <textarea id="cMsg" name="message" class="form-textarea" placeholder="Tell me about your project..." rows="5" required aria-required="true"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h12M10 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <p class="form-ok" id="formOk" role="alert" style="display:none;">Message sent. I'll be in touch soon.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SECTION 9 — FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-name">Muhammad Ahmad</div>
+          <div class="footer-roles">AI Ads Creator &nbsp;·&nbsp; AI Video Generation Specialist</div>
+          <p class="footer-tag">Creating cinematic AI advertisements that make products unforgettable.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul role="list">
+            <li><a href="#about" class="footer-lnk">About</a></li>
+            <li><a href="#services" class="footer-lnk">Services</a></li>
+            <li><a href="#projects" class="footer-lnk">Projects</a></li>
+            <li><a href="#process" class="footer-lnk">Process</a></li>
+            <li><a href="#contact" class="footer-lnk">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-social-wrap">
+          <h3 class="footer-heading">Connect</h3>
+          <!-- HOW TO ADD SOCIAL LINKS: Replace href="#" with your actual URL -->
+          <div class="social-links" role="list">
+            <a href="#" class="social-lnk" aria-label="Instagram" rel="noopener noreferrer" role="listitem">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              Instagram
+            </a>
+            <a href="#" class="social-lnk" aria-label="YouTube" rel="noopener noreferrer" role="listitem">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M10 9l5 3-5 3V9z" fill="currentColor"/></svg>
+              YouTube
+            </a>
+            <a href="#" class="social-lnk" aria-label="TikTok" rel="noopener noreferrer" role="listitem">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-4.5 5.5a3 3 0 0 0 3 3v2a5 5 0 0 1-3-1v4.5a4.5 4.5 0 1 1-4.5-4.5h.5v2h-.5a2.5 2.5 0 1 0 2.5 2.5V8.5h2z"/></svg>
+              TikTok
+            </a>
+            <a href="#" class="social-lnk" aria-label="LinkedIn" rel="noopener noreferrer" role="listitem">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M8 11v5M8 8v.5M12 16v-5m0 0c0-1.5 4-1.5 4 0v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-divider"></div>
+        <div class="footer-btm-row">
+          <p>&copy; <span id="footerYear"></span> Muhammad Ahmad. All rights reserved.</p>
+          <p>AI Ads Creator · Lahore, Pakistan</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== JavaScript Entry Point ===== -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
