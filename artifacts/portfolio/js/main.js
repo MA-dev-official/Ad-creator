@@ -65,61 +65,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // 8. Testimonials
     initTestimonials();
 
-    // 9. Contact form
-    initContactForm();
-
-    // 10. Mobile navigation
+    // 9. Mobile navigation
     initMobileNav();
   });
 });
 
-// ─── CONTACT FORM ────────────────────────────────────────────
-function initContactForm() {
-  const form   = document.getElementById("contactForm");
-  const formOk = document.getElementById("formOk");
-  if (!form) return;
-
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    // Basic validation
-    const name    = form.querySelector("#cName");
-    const email   = form.querySelector("#cEmail");
-    const message = form.querySelector("#cMsg");
-
-    if (!name?.value.trim() || !email?.value.trim() || !message?.value.trim()) {
-      // Shake invalid fields
-      [name, email, message].forEach((field) => {
-        if (field && !field.value.trim()) {
-          field.style.borderColor = "rgba(255,80,80,0.5)";
-          field.addEventListener("input", () => {
-            field.style.borderColor = "";
-          }, { once: true });
-        }
-      });
-      return;
-    }
-
-    const btn = form.querySelector("button[type='submit']");
-    if (btn) {
-      btn.disabled = true;
-      btn.querySelector("span").textContent = "Sending...";
-    }
-
-    // Simulate sending (replace with real backend/email service when ready)
-    setTimeout(() => {
-      form.reset();
-      if (btn) {
-        btn.disabled = false;
-        btn.querySelector("span").textContent = "Send Message";
-      }
-      if (formOk) {
-        formOk.style.display = "block";
-        setTimeout(() => { formOk.style.display = "none"; }, 5000);
-      }
-    }, 1200);
-  });
-}
 
 // ─── MOBILE NAVIGATION ───────────────────────────────────────
 function initMobileNav() {

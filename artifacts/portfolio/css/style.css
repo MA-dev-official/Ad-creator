@@ -1475,121 +1475,60 @@ button {
   background: linear-gradient(180deg, var(--bg-alt) 0%, var(--bg) 100%);
 }
 
-.contact-grid {
-  display: grid;
-  gap: 60px;
+.contact-simple {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .contact-headline {
   font-family: var(--font-serif);
-  font-size: clamp(1.6rem, 4vw, 2.5rem);
-  font-weight: 400;
-  line-height: 1.25;
-  color: var(--white);
-  margin: 16px 0 32px;
-}
-
-.contact-headline em {
-  color: var(--gold);
-  font-style: italic;
-}
-
-.contact-card {
-  padding: 28px;
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: var(--r-md);
-}
-
-.contact-name {
-  font-family: var(--font-serif);
-  font-size: 1.4rem;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
   font-weight: 400;
   color: var(--white);
-  margin-bottom: 8px;
+  margin: 16px 0 12px;
 }
 
-.contact-roles {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  font-size: 0.8rem;
-  color: var(--muted);
-  margin-bottom: 16px;
-  align-items: center;
-}
-
-.dot {
-  color: var(--gold);
-}
-
-.contact-loc {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.8rem;
-  color: var(--muted);
-}
-
-/* Form */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.form-row {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.form-lbl {
-  font-size: 0.78rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-.form-inp,
-.form-textarea {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: var(--r-sm);
-  color: var(--white);
-  font-family: var(--font-sans);
+.contact-sub {
   font-size: 0.95rem;
-  padding: 14px 16px;
-  width: 100%;
-  transition: border-color var(--dur-fast), box-shadow var(--dur-fast);
-  outline: none;
-  resize: vertical;
+  color: var(--muted);
+  margin-bottom: 40px;
+  line-height: 1.6;
 }
 
-.form-inp::placeholder,
-.form-textarea::placeholder {
-  color: var(--dark-muted);
-}
-
-.form-inp:focus,
-.form-textarea:focus {
-  border-color: rgba(212,175,55,0.5);
-  box-shadow: 0 0 0 3px rgba(212,175,55,0.06);
-}
-
-.form-textarea {
-  min-height: 140px;
-}
-
-.form-ok {
-  text-align: center;
+.contact-email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-serif);
+  font-size: clamp(1rem, 2.5vw, 1.35rem);
   color: var(--gold);
-  font-size: 0.9rem;
-  padding: 12px;
-  background: rgba(212,175,55,0.06);
-  border: 1px solid rgba(212,175,55,0.2);
-  border-radius: var(--r-sm);
+  text-decoration: none;
+  border: 1px solid rgba(212,175,55,0.25);
+  border-radius: var(--r-md);
+  padding: 20px 36px;
+  background: rgba(212,175,55,0.04);
+  transition: background var(--dur-med), border-color var(--dur-med),
+              transform var(--dur-med) var(--ease-luxury),
+              box-shadow var(--dur-med), letter-spacing var(--dur-med);
+  letter-spacing: 0.01em;
+}
+
+.contact-email-link:hover {
+  background: rgba(212,175,55,0.10);
+  border-color: rgba(212,175,55,0.55);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 48px rgba(212,175,55,0.12);
+  letter-spacing: 0.03em;
+}
+
+.contact-email-link svg {
+  flex-shrink: 0;
+  transition: transform var(--dur-med) var(--ease-luxury);
+}
+
+.contact-email-link:hover svg {
+  transform: scale(1.15);
 }
 
 /* ───────────────────────────────────────────────────────────── */
@@ -1716,18 +1655,6 @@ button {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .contact-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-
-  .contact-form .form-row:nth-child(3),
-  .contact-form .btn,
-  .contact-form .form-ok {
-    grid-column: 1 / -1;
-  }
-
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1781,13 +1708,6 @@ button {
   /* Projects: 3 columns */
   .projects-grid {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  /* Contact: side by side */
-  .contact-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: start;
   }
 
   /* Footer: 3 columns */
