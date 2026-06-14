@@ -152,14 +152,33 @@ function openModal(project) {
   if (modalDesc)  modalDesc.textContent  = project.description;
   if (modalCat)   modalCat.textContent   = project.category;
 
-  // Set video source
+  // Set video source — show loading spinner while buffering
   if (modalVideo) {
     if (project.video) {
-      modalVideo.src = project.video;
-      modalVideo.load();
       modalVideo.style.display = "";
+
+      // Show spinner until video can play
+      const wrap = modalVideo.closest(".modal-video-wrap");
+      if (wrap) wrap.classList.add("loading");
+
+      // Remove old listeners to avoid stacking
+      const onCanPlay = () => {
+        if (wrap) wrap.classList.remove("loading");
+        modalVideo.play().catch(() => {});
+        modalVideo.removeEventListener("canplay", onCanPlay);
+      };
+      const onError = () => {
+        if (wrap) wrap.classList.remove("loading");
+        modalVideo.removeEventListener("error", onError);
+      };
+
+      modalVideo.addEventListener("canplay", onCanPlay);
+      modalVideo.addEventListener("error", onError);
+
+      modalVideo.src = project.video;
+      modalVideo.preload = "auto";
+      modalVideo.load();
     } else {
-      // No video yet — show a graceful placeholder
       modalVideo.src = "";
       modalVideo.style.display = "none";
     }
@@ -169,12 +188,10 @@ function openModal(project) {
   modal.style.display = "flex";
   document.body.style.overflow = "hidden";
 
-  // Animate open (small delay for display:flex to take effect)
   requestAnimationFrame(() => {
     modal.classList.add("open");
   });
 
-  // Trap focus inside modal
   modalClose?.focus();
 }
 

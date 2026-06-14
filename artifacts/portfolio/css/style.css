@@ -1216,12 +1216,43 @@ button {
 .modal-video-wrap {
   aspect-ratio: 16 / 9;
   background: #000;
+  position: relative;
 }
 
 .modal-video {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+/* Loading spinner — shown while video buffers */
+.modal-video-wrap.loading::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-video-wrap.loading::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  border: 2px solid rgba(212,175,55,0.2);
+  border-top-color: var(--gold);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  z-index: 2;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
 }
 
 .modal-info {
@@ -1496,22 +1527,34 @@ button {
   line-height: 1.6;
 }
 
-.contact-email-link {
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact-email-link,
+.contact-whatsapp-link {
   display: inline-flex;
   align-items: center;
   gap: 12px;
   font-family: var(--font-serif);
-  font-size: clamp(1rem, 2.5vw, 1.35rem);
-  color: var(--gold);
+  font-size: clamp(0.95rem, 2.2vw, 1.2rem);
   text-decoration: none;
-  border: 1px solid rgba(212,175,55,0.25);
   border-radius: var(--r-md);
-  padding: 20px 36px;
-  background: rgba(212,175,55,0.04);
+  padding: 18px 36px;
+  width: 100%;
+  max-width: 460px;
+  justify-content: center;
   transition: background var(--dur-med), border-color var(--dur-med),
-              transform var(--dur-med) var(--ease-luxury),
-              box-shadow var(--dur-med), letter-spacing var(--dur-med);
-  letter-spacing: 0.01em;
+              transform var(--dur-med) var(--ease-luxury), box-shadow var(--dur-med);
+}
+
+.contact-email-link {
+  color: var(--gold);
+  border: 1px solid rgba(212,175,55,0.25);
+  background: rgba(212,175,55,0.04);
 }
 
 .contact-email-link:hover {
@@ -1519,15 +1562,29 @@ button {
   border-color: rgba(212,175,55,0.55);
   transform: translateY(-3px);
   box-shadow: 0 16px 48px rgba(212,175,55,0.12);
-  letter-spacing: 0.03em;
 }
 
-.contact-email-link svg {
+.contact-whatsapp-link {
+  color: #25D366;
+  border: 1px solid rgba(37,211,102,0.25);
+  background: rgba(37,211,102,0.04);
+}
+
+.contact-whatsapp-link:hover {
+  background: rgba(37,211,102,0.10);
+  border-color: rgba(37,211,102,0.55);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 48px rgba(37,211,102,0.10);
+}
+
+.contact-email-link svg,
+.contact-whatsapp-link svg {
   flex-shrink: 0;
   transition: transform var(--dur-med) var(--ease-luxury);
 }
 
-.contact-email-link:hover svg {
+.contact-email-link:hover svg,
+.contact-whatsapp-link:hover svg {
   transform: scale(1.15);
 }
 

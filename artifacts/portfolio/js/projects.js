@@ -35,73 +35,16 @@ export const projects = [
   // Leave thumbnail/video fields empty to show a styled placeholder.
 
   {
-    title: "Eternal Noir — Luxury Perfume Campaign",
-    category: "Perfume Ads",
-    description: "A cinematic AI-generated perfume commercial featuring deep atmospheric visuals and luxury storytelling.",
-    thumbnail: "", // Add: "assets/thumbnails/perfume-noir.jpg"
-    video: ""      // Add: "assets/videos/perfume-noir.mp4"
-  },
-  {
-    title: "Lumière Gold — Fragrance Commercial",
-    category: "Perfume Ads",
-    description: "Premium gold-themed fragrance advertisement with fluid particle effects and luxury product presentation.",
-    thumbnail: "",
-    video: ""
-  },
-  {
-    title: "Obsidian Watch — Product Commercial",
+    title: "Queteeco Cosmetics Lip Gloss – Flirty Lips",
     category: "Product Commercials",
-    description: "High-end watch commercial featuring macro cinematic shots and luxury brand aesthetics.",
-    thumbnail: "",
-    video: ""
-  },
-  {
-    title: "Crystal Serum — Skincare Ad",
+    description: "Premium AI-generated lip gloss advertisement designed for Queteeco Cosmetics, highlighting glossy texture, vibrant finish, and beauty-focused commercial styling for social media marketing.",
+    thumbnail: "assets/thumbnails/LipGloss.jpg", // Add: "assets/thumbnails/perfume-noir.jpg"
+    video: "assets/videos/LipGloss.mp4"      // Add: "assets/videos/perfume-noir.mp4"
+  },{
+    title: "Gluta-Hya Beauty Cream Ad",
     category: "Product Commercials",
-    description: "Premium skincare product commercial with clean visuals and compelling benefit storytelling.",
-    thumbnail: "",
-    video: ""
-  },
-  {
-    title: "Velocity Shoes — Instagram Reel Ad",
-    category: "Social Media Ads",
-    description: "Dynamic footwear advertisement optimized for Instagram and TikTok — fast-cut, visually punchy.",
-    thumbnail: "",
-    video: ""
-  },
-  {
-    title: "Bloom Cosmetics — TikTok Campaign",
-    category: "Social Media Ads",
-    description: "Vertical-format social media ads for a cosmetics brand targeting Gen Z audiences.",
-    thumbnail: "",
-    video: ""
-  },
-  {
-    title: "Apex Motors — Brand Film",
-    category: "Brand Promotions",
-    description: "Cinematic brand identity video for a luxury automotive company showcasing prestige and power.",
-    thumbnail: "",
-    video: ""
-  },
-  {
-    title: "Heritage Leather — Brand Story",
-    category: "Brand Promotions",
-    description: "Premium leather goods brand promotion video with artisan storytelling and warm aesthetic.",
-    thumbnail: "",
-    video: ""
-  },
-  {
-    title: "NovaTech — Product Launch Campaign",
-    category: "AI Marketing Videos",
-    description: "Full AI-generated marketing campaign video for a tech product launch, from teaser to reveal.",
-    thumbnail: "",
-    video: ""
-  },
-  {
-    title: "Pure Glow — E-Commerce Product Ad",
-    category: "AI Marketing Videos",
-    description: "Conversion-focused product advertisement designed for online store sales pages and digital campaigns.",
-    thumbnail: "",
-    video: ""
-  },
+    description: "AI-generated cosmetic product advertisement featuring premium product visuals, image-to-video animation, and commercial-style editing for social media marketing.",
+    thumbnail: "assets/thumbnails/beuatycream.jpg", // Add: "assets/thumbnails/perfume-noir.jpg"
+    video: "assets/videos/beautycream.mp4"      // Add: "assets/videos/perfume-noir.mp4"
+  }
 ];
