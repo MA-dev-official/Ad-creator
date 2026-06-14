@@ -35,6 +35,18 @@ export const projects = [
   // Leave thumbnail/video fields empty to show a styled placeholder.
 
   {
+    title: "Parisbelle NAJRAH Perfume Ad",
+    category: "Perfume Ads",
+    description: "Luxury AI-generated fragrance advertisement for Najrah, designed with elegant cinematic visuals, premium scent storytelling, and high-end branding aesthetic to enhance social media marketing impact.",
+    thumbnail: "assets/thumbnails/perfume2.jpg", // Add: "assets/thumbnails/perfume-noir.jpg"
+    video: "assets/videos/perfume2.mp4"      // Add: "assets/videos/perfume-noir.mp4"
+  },{
+    title: "Parisbelle Honey Tabac Perfume Ad",
+    category: "Perfume Ads",
+    description: "Premium AI-generated perfume advertisement for Parisbelle Honey Tabac, focusing on luxury fragrance branding, warm honey-tobacco scent aesthetic, and cinematic product presentation designed for high-end social media marketing.",
+    thumbnail: "assets/thumbnails/perfume.jpg", // Add: "assets/thumbnails/perfume-noir.jpg"
+    video: "assets/videos/perfume.mp4"      // Add: "assets/videos/perfume-noir.mp4"
+  },{
     title: "Queteeco Cosmetics Lip Gloss – Flirty Lips",
     category: "Product Commercials",
     description: "Premium AI-generated lip gloss advertisement designed for Queteeco Cosmetics, highlighting glossy texture, vibrant finish, and beauty-focused commercial styling for social media marketing.",
