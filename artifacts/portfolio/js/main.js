@@ -28,7 +28,7 @@ import {
   initActiveNav,
 } from "./animations.js";
 
-import { renderProjects, initFilters, initModal } from "./filters.js";
+import { renderProjects, initFilters, initModal, preloadVideos } from "./filters.js";
 import { initTestimonials } from "./testimonials.js";
 
 // ─── BOOT ────────────────────────────────────────────────────
@@ -61,6 +61,10 @@ document.addEventListener("DOMContentLoaded", () => {
     renderProjects("All Projects");
     initFilters();
     initModal();
+
+    // Start preloading all videos in background after 2s
+    // (gives page time to fully render first)
+    setTimeout(preloadVideos, 2000);
 
     // 8. Testimonials
     initTestimonials();

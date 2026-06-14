@@ -18,6 +18,36 @@
 import { projects } from "./projects.js";
 import { animateProjectCards } from "./animations.js";
 
+// ─── BACKGROUND VIDEO PRELOADER ──────────────────────────────
+// Creates hidden <video> elements so the browser fetches & caches
+// each video file in the background. When user clicks, it plays instantly.
+export function preloadVideos() {
+  const videos = projects.filter((p) => p.video);
+  if (!videos.length) return;
+
+  // Use a hidden container so elements don't affect layout
+  let container = document.getElementById("_videoPreloadCache");
+  if (!container) {
+    container = document.createElement("div");
+    container.id = "_videoPreloadCache";
+    container.style.cssText = "position:absolute;width:0;height:0;overflow:hidden;pointer-events:none;";
+    document.body.appendChild(container);
+  }
+
+  videos.forEach((project) => {
+    // Skip if already preloading this video
+    if (container.querySelector(`[data-src="${project.video}"]`)) return;
+
+    const vid = document.createElement("video");
+    vid.setAttribute("data-src", project.video);
+    vid.preload  = "auto";
+    vid.muted    = true;
+    vid.src      = project.video;
+    vid.load();
+    container.appendChild(vid);
+  });
+}
+
 const grid      = document.getElementById("projectsGrid");
 const emptyMsg  = document.getElementById("projectsEmpty");
 const filterBar = document.querySelector(".filter-bar");
